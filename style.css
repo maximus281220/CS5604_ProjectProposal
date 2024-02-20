@@ -1,28 +1,160 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    text-decoration: none;
+    list-style: none;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+/* Apply a base font family and size */
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+    padding-bottom: 50px; /* For footer */
 }
 
-nav ul {
-    list-style-type: none;
+/* Container for all content to center it on the page */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #003366; /* Dark blue */
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0066cc 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+header ul {
     padding: 0;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header h1 {
+    float: left;
+    font-size: 2em;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Clear floats */
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for the navigation bar */
+nav ul {
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul a {
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    width: auto;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    float: none;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+nav ul:hover {
+    background-color: #444;
+}
+
+/* Hover states for links */
+nav ul li a:hover,
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Styles for form elements */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 94%; /* 100% width - 2 * 3% padding */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #0056b3; /* Blue */
+    color: white;
+    border: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+/* Make images responsive */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Apply responsive design */
+@media only screen and (max-width: 768px) {
+    header h1,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 95%;
+    }
 }
