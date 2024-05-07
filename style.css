@@ -176,3 +176,85 @@ img {
         width: 95%;
     }
 }
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px; /* Adjust based on your preference */
+    height: auto;
+    border-radius: 20%; /* Circular images */
+    margin-bottom: 8px;
+}
+/* Basic resets */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Team section styling */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 150px;  /* Adjust to fit your design */
+    height: 200px;
+    border-radius: 20%;  /* Makes images circular */
+}
+
+.team-member p {
+    margin-top: 8px;
+}
+/* Styles for project resources like PPT and video */
+.project-resources {
+    text-align: center;  /* Centers the content */
+    margin-top: 20px;    /* Adds space above the links */
+}
+
+.project-resources a {
+    display: inline-block;
+    background-color: #0056b3; /* Matches your submit button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;  /* Ensures no underline */
+    margin: 5px;            /* Adds space between links */
+}
+
+.project-resources a:hover {
+    background-color: #003366; /* Darker shade on hover */
+}
